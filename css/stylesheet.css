@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 15vh 75vh 10vh;
+}
+header{
+    background-color: red;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+nav{
+    background-color: silver;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+main{
+    background-color: white;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+footer{
+    background-color: red;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
