@@ -1,4 +1,7 @@
 <?php
+namespace view;
+include_once "model/Model.php";
+use model\Model;
 class View
 {
     private $model;
@@ -8,6 +11,7 @@ class View
         $this->model = $model;
     }
     public function viewContent(){
-        $this->content = $this->model->getContent();
+        include "health.php";
+
     }
 }

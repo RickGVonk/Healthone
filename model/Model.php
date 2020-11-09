@@ -1,5 +1,5 @@
 <?php
-namespace mvc;
+namespace model;
 
 class Model
 {
