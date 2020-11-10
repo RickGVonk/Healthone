@@ -4,8 +4,8 @@
 }
 body{
     display: grid;
-    grid-template-columns: 10vw 80vw 10vw;
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-columns: 8vw 82vw 10vw;
+    grid-template-rows: 15vh 80vh 5vh;
 }
 header{
     background-color: red;
@@ -21,6 +21,9 @@ main{
     background-color: white;
     grid-column: 2/4;
     grid-row: 2/3;
+}
+.login{
+
 }
 footer{
     background-color: red;
