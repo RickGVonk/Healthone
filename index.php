@@ -1,5 +1,9 @@
 <?php
-include_once "controller/Controller.php";
-$controller = new \controller\Controller();
 
-$controller->updateView();
+use controller\Controller;
+include_once 'controller/Controller.php';
+$controller = new Controller();
+$controller->checkAction();
+
+
+
