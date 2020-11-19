@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e6b3a95-1dfc-4736-ad41-251aeab8a2c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthone-1.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/healthone.sql" beforeDir="false" afterPath="$PROJECT_DIR$/healthone.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
       <updated>1604930199125</updated>
       <workItem from="1604930200193" duration="2145000" />
       <workItem from="1605014804062" duration="2095000" />
+      <workItem from="1605774225653" duration="2265000" />
     </task>
     <task id="LOCAL-00001" summary="het werk kan nu xampp gebruiken voor launch">
       <created>1604931111979</created>
@@ -88,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605772124879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="healthone.sql medicijnen aan toegevoegd">
+      <created>1605773815493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605773815493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,17 +116,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="het werk kan nu xampp gebruiken voor launch" />
     <MESSAGE value="update health.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="update health.php" />
+    <MESSAGE value="healthone.sql medicijnen aan toegevoegd" />
+    <option name="LAST_COMMIT_MESSAGE" value="healthone.sql medicijnen aan toegevoegd" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1605772124220">
+    <state x="776" y="0" key="CommitChangelistDialog2" timestamp="1605773814828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605772124220" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1605772129945">
+    <state x="776" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605773814828" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1605773818270">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="553" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1000/0.0.1920.1040@0.0.1920.1040" timestamp="1605014849619" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605772129945" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605773818270" />
   </component>
 </project>
