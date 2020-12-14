@@ -17,12 +17,7 @@
        <input type="text" id="password" name="password" placeholder="Wachtwoord"><br/><br/>
        <input type="button" id="submit" value="Login">
    </section>
-<!--    Welkom in de zilver kruis webapp-->
-<!--    hier kunt u de volgende informatie vinden en toevoegen-->
-<!--    insert info waar ze toegang tot hebben-->
-<!--    <div>-->
-<!--        -->
-<!--    </div>-->
+
 </main>
 <nav>
 

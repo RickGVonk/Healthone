@@ -8,10 +8,10 @@
 <form method="post" method="index.php">
     <table>
 
-        <tr><td>   <label for='username''>Inlognaam</label></td><td>
+        <tr><td>   <label for='username''>Inlognaam:</label></td><td>
                 <input type="text" name="username" value= ''/></td></tr>
         <tr><td>
-                <label for="password">adres</label></td><td>
+                <label for="password">Wachtwoord:</label></td><td>
                 <input type="password" name="password" /></td></tr>
 
         <tr><td>
