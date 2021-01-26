@@ -101,20 +101,45 @@ class Model
         $result = $selection ->execute();
         return $result;
     }
+    public function selectBezorger($id){
+
+        $this->makeConnection();
+        $selection = $this->database->prepare(
+            'SELECT * FROM `bezorger` 
+            WHERE `bezorger`.`id` =:id');
+        $selection->bindParam(":id",$id);
+        $result = $selection ->execute();
+        if($result){
+            $selection->setFetchMode(\PDO::FETCH_CLASS, \model\Patient::class);
+            $bezorger = $selection->fetch();
+            return $bezorger;
+        }
+        return null;
+    }
+    public function deleteBezorger($id){
+        $this->makeConnection();
+        $selection = $this->database->prepare(
+            'DELETE FROM `bezorger` 
+            WHERE `bezorger`.`id` =:id');
+        $selection->bindParam(":id",$id);
+        $result = $selection ->execute();
+        return $result;
+    }
 
     public function login($username, $password){
         $this->makeConnection();
         $encryptwachtwoord = hash('sha256', $password);
-        $query = $this->database->prepare("SELECT * FROM `apotheker` WHERE `username` = :username");
+        $query = $this->database->prepare("SELECT * FROM `users` WHERE `username` = :username");
         $query->bindParam(":username", $username);
         $result = $query->execute();
         if($result){
-            $query->setFetchMode(\PDO::FETCH_CLASS,Apotheker::class);
+            $query->setFetchMode(\PDO::FETCH_CLASS,User::class);
             $apotheker = $query->fetch();
+//            var_dump($encryptwachtwoord ===$apotheker->getPassword());
             if($apotheker){
-                if($encryptwachtwoord == $apotheker->__get('wachtwoord')){
-                    $_SESSION['username'] = $apotheker->username;
-                    $_SESSION['naam'] = $apotheker->naam;
+                if($encryptwachtwoord == $apotheker->getPassword()){
+                    $_SESSION['username'] = $apotheker->getUsername();
+//                    $_SESSION['naam'] = $apotheker->getUserName();
                 }
             }
         }
