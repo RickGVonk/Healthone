@@ -5,6 +5,7 @@ namespace model;
 include_once ('model/Patient.php');
 include_once ('model/User.php');
 include_once('model/Arts.php');
+
 class Model
 {
     private $database;
@@ -103,21 +104,21 @@ class Model
 
     public function login($username, $password){
         $this->makeConnection();
-        $selection = $this->database->prepare(
-            'SELECT * FROM `users` 
-            WHERE `users`.`username` =:username');
-        $selection->bindParam(":username",$username);
-        $result = $selection ->execute();
+        $encryptwachtwoord = hash('sha256', $password);
+        $query = $this->database->prepare("SELECT * FROM `apotheker` WHERE `username` = :username");
+        $query->bindParam(":username", $username);
+        $result = $query->execute();
         if($result){
-            $selection->setFetchMode(\PDO::FETCH_CLASS, \model\User::class);
-            $user = $selection->fetch();
-            if($user){
-                $gehashtpassword = strtoupper(hash("sha256", $password));
-//                var_dump($gehashtpassword);
-                if($user->getPassword() == $gehashtpassword){
-                    $_SESSION['user']=$user->getUsername();
-                    $_SESSION['role']=$user->getRole();
-            }           }        }    }
+            $query->setFetchMode(\PDO::FETCH_CLASS,Apotheker::class);
+            $apotheker = $query->fetch();
+            if($apotheker){
+                if($encryptwachtwoord == $apotheker->__get('wachtwoord')){
+                    $_SESSION['username'] = $apotheker->username;
+                    $_SESSION['naam'] = $apotheker->naam;
+                }
+            }
+        }
+    }
     public function logout(){
         session_unset();
         session_destroy();
