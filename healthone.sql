@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 10 nov 2020 om 19:09
--- Serverversie: 10.4.11-MariaDB
--- PHP-versie: 7.4.1
+-- Generation Time: Jan 27, 2021 at 11:20 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,13 +20,11 @@ SET time_zone = "+00:00";
 --
 -- Database: `healthone`
 --
-CREATE DATABASE IF NOT EXISTS `healthone` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `healthone`;
 
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `artsen`
+-- Table structure for table `artsen`
 --
 
 CREATE TABLE `artsen` (
@@ -38,7 +35,7 @@ CREATE TABLE `artsen` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `artsen`
+-- Dumping data for table `artsen`
 --
 
 INSERT INTO `artsen` (`id`, `naam`, `telefoon`, `specialisatie`) VALUES
@@ -47,7 +44,56 @@ INSERT INTO `artsen` (`id`, `naam`, `telefoon`, `specialisatie`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `patienten`
+-- Table structure for table `bezorger`
+--
+
+CREATE TABLE `bezorger` (
+  `id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `phonenumber` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `bezorger`
+--
+
+INSERT INTO `bezorger` (`id`, `name`, `phonenumber`) VALUES
+(1, 'henk', '+316222222');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `medicijnen`
+--
+
+CREATE TABLE `medicijnen` (
+  `id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `verzekerd` tinyint(1) NOT NULL,
+  `werking` text NOT NULL,
+  `bijwerking` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `medicijnen`
+--
+
+INSERT INTO `medicijnen` (`id`, `name`, `verzekerd`, `werking`, `bijwerking`) VALUES
+(2, 'levonctirizine', 1, 'anti-histamine', 'vermoeidheid'),
+(3, 'pantaprozol', 0, 'werking', 'bijwerking'),
+(12, 'Vitamine D', 0, 'energie', ''),
+(13, 'ibruprufen', 1, 'tegen hoofdpijn', ''),
+(14, 'wajong', 1, 'zorgt ervoor dat je beterslaapt', 'hoofdpijn'),
+(2, 'levonctirizine', 1, 'anti-histamine', 'vermoeidheid'),
+(3, 'pantaprozol', 0, 'werking', 'bijwerking'),
+(12, 'Vitamine D', 0, 'energie', ''),
+(13, 'ibruprufen', 1, 'tegen hoofdpijn', ''),
+(14, 'wajong', 1, 'zorgt ervoor dat je beterslaapt', 'hoofdpijn');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `patienten`
 --
 
 CREATE TABLE `patienten` (
@@ -62,7 +108,7 @@ CREATE TABLE `patienten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `patienten`
+-- Dumping data for table `patienten`
 --
 
 INSERT INTO `patienten` (`id`, `naam`, `adres`, `woonplaats`, `zknummer`, `geboortedatum`, `soortverzekering`, `artsid`) VALUES
@@ -75,7 +121,7 @@ INSERT INTO `patienten` (`id`, `naam`, `adres`, `woonplaats`, `zknummer`, `geboo
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -86,63 +132,63 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `role`) VALUES
-(1, 'admin', 'A008BB4D28471677701431C18AB2514035D91BAE7F84F0C08FBE13D457809C2D', 'admin');
+(1, 'admin', '0876dfca6d6fedf99b2ab87b6e2fed4bd4051ede78a8a9135b500b2e94d99b88', 'admin');
 
 --
--- Indexen voor geëxporteerde tabellen
+-- Indexes for dumped tables
 --
 
 --
--- Indexen voor tabel `artsen`
+-- Indexes for table `artsen`
 --
 ALTER TABLE `artsen`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexen voor tabel `patienten`
+-- Indexes for table `patienten`
 --
 ALTER TABLE `patienten`
   ADD PRIMARY KEY (`id`),
   ADD KEY `arts_id` (`artsid`);
 
 --
--- Indexen voor tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT voor geëxporteerde tabellen
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT voor een tabel `artsen`
+-- AUTO_INCREMENT for table `artsen`
 --
 ALTER TABLE `artsen`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT voor een tabel `patienten`
+-- AUTO_INCREMENT for table `patienten`
 --
 ALTER TABLE `patienten`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT voor een tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Beperkingen voor geëxporteerde tabellen
+-- Constraints for dumped tables
 --
 
 --
--- Beperkingen voor tabel `patienten`
+-- Constraints for table `patienten`
 --
 ALTER TABLE `patienten`
   ADD CONSTRAINT `fk_patient_arts` FOREIGN KEY (`artsid`) REFERENCES `artsen` (`id`);
