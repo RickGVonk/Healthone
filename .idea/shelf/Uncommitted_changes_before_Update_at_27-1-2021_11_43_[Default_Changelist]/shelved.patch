@@ -1,0 +1,87 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1e6b3a95-1dfc-4736-ad41-251aeab8a2c9\" name=\"Default Changelist\" comment=\"update health.php\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/css/stylesheet.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/css/stylesheet.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/health.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/health.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1k3XMJP05PCmZI2XQr1hsZG5fLo\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1e6b3a95-1dfc-4736-ad41-251aeab8a2c9\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1604930199125</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1604930199125</updated>\r\n      <workItem from=\"1604930200193\" duration=\"2145000\" />\r\n      <workItem from=\"1605014804062\" duration=\"2095000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"het werk kan nu xampp gebruiken voor launch\">\r\n      <created>1604931111979</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1604931111979</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"update health.php\">\r\n      <created>1605014844985</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1605014844985</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"3\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"het werk kan nu xampp gebruiken voor launch\" />\r\n    <MESSAGE value=\"update health.php\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"update health.php\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"553\" y=\"253\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1605014849619\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"553\" y=\"253\" key=\"Vcs.Push.Dialog.v2/-1920.0.1920.1000/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1605014849619\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bca59ff9e5db4c197e9b46c91db5c8e9aa5a2c54)
++++ b/.idea/workspace.xml	(date 1609399369091)
+@@ -19,10 +19,8 @@
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="1e6b3a95-1dfc-4736-ad41-251aeab8a2c9" name="Default Changelist" comment="update health.php">
++    <list default="true" id="1e6b3a95-1dfc-4736-ad41-251aeab8a2c9" name="Default Changelist" comment="login begonnen">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/health.php" beforeDir="false" afterPath="$PROJECT_DIR$/health.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -43,8 +41,9 @@
+   <component name="PropertiesComponent">
+     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/www" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+@@ -62,7 +61,10 @@
+       <option name="presentableId" value="Default" />
+       <updated>1604930199125</updated>
+       <workItem from="1604930200193" duration="2145000" />
+-      <workItem from="1605014804062" duration="2095000" />
++      <workItem from="1605014804062" duration="2128000" />
++      <workItem from="1606390988103" duration="219000" />
++      <workItem from="1609317785256" duration="133000" />
++      <workItem from="1609317967812" duration="1913000" />
+     </task>
+     <task id="LOCAL-00001" summary="het werk kan nu xampp gebruiken voor launch">
+       <created>1604931111979</created>
+@@ -78,7 +80,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1605014844985</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="login begonnen">
++      <created>1605016912158</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1605016912158</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -99,12 +108,21 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="het werk kan nu xampp gebruiken voor launch" />
+     <MESSAGE value="update health.php" />
+-    <option name="LAST_COMMIT_MESSAGE" value="update health.php" />
++    <MESSAGE value="login begonnen" />
++    <option name="LAST_COMMIT_MESSAGE" value="login begonnen" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605014849619">
++    <state x="416" y="175" width="1086" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606391131589">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="416" y="175" width="1086" height="750" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606391131589" />
++    <state x="742" y="307" key="FileChooserDialogImpl" timestamp="1606391125553">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="553" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1000/0.0.1920.1040@0.0.1920.1040" timestamp="1605014849619" />
++    <state x="742" y="307" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606391125553" />
++    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605016914218">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="553" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1000/0.0.1920.1040@0.0.1920.1040" timestamp="1605016914218" />
+   </component>
+ </project>
+\ No newline at end of file
