@@ -10,7 +10,6 @@ class View
         $this->model = $model;
     }
     public function showPatienten($result = null){
-        var_dump("vanuit view".$_SESSION['username']);
         if($result == 1){
             echo "<h4>Actie geslaagd</h4>";
         }
@@ -185,21 +184,22 @@ class View
         }
         $bezorgers = $this->model->getBezorgersMetArts();
 
+
         /*de html template */
         echo "<!DOCTYPE html>
                 <html lang=\"en\">
                 <head>
                     <meta charset=\"UTF-8\">
-                    <title>Overzicht patienten</title>
+                    <title>Overzicht bezorgers</title>
                     <style>
-                        #patienten{
+                        #bezorgers{
                             display:grid;
                             grid-template-columns:repeat(4,1fr);                
                             grid-column-gap:10px;
                             grid-row-gap:10px;
                             justify-content: center;
                         }
-                        .patient{
+                        .bezorgers{
                             width:80%;
                             background-color:#ccccff;
                             color:darkslategray;
@@ -213,16 +213,10 @@ class View
 
         if (!isset($_SESSION['username']))
         {
-            require ("templates/loginform.php");
         }
         else {
             echo "<h2>Bezorger overzicht</h2> ";
             if (isset($_SESSION['username'])) {
-                echo" <form action='index.php' method='post'>
-                       <input type='hidden' name='logout' value='0'>
-                       <input type='submit' value='Uitloggen'/>
-                       </form>";
-
                 if ($_SESSION['username'] == "admin") {
                     echo "
                     
@@ -258,7 +252,7 @@ class View
                 }//end for each
             }//end if patienten is set
             else {
-                echo "Geen patienten gevonden";
+                echo "Geen bezorgers gevonden";
             }
         }
     }

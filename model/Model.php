@@ -101,6 +101,47 @@ class Model
         $result = $selection ->execute();
         return $result;
     }
+    public function insertBezorger($naam,$phonenumber){
+        $this->makeConnection();
+        if($naam !='')
+        {
+            $query = $this->database->prepare (
+                "INSERT INTO `patienten` (`id`, `naam`, `phonenumber`) 
+                VALUES (NULL, :naam, :phonenumber)");
+            $query->bindParam(":naam", $naam);
+            $query->bindParam(":phonenumber",$phonenumber);
+            $result = $query->execute();
+            return $result;
+        }
+        return -1;
+        // id hoeft niet te worden toegevoegd omdat de id in de databse op autoincrement staat.
+
+
+    }
+    public function updateBezorger($id,$naam,$phonenumber){
+        $this->makeConnection();
+
+        // id moet worden toegevoegd omdat de id in de databse wordt gezocht
+        $query = $this->database->prepare (
+            "UPDATE `bezorger` SET `naam` = :naam, `phonenumber` =: phonenumber
+            WHERE `bezorger`.`id` = :id ");
+        $query->bindParam(":id", $id);
+        $query->bindParam(":naam", $naam);
+        $query->bindParam(":adres", $phonenumber);
+        $result = $query->execute();
+        return $result;
+    }
+
+    public function getBezorger(){
+
+        $this->makeConnection();
+        $selection = $this->database->query('SELECT * FROM `bezorger`');
+        if($selection){
+            $result=$selection->fetchAll(\PDO::FETCH_CLASS,\model\Bezorger::class);
+            return $result;
+        }
+        return null;
+    }
     public function selectBezorger($id){
 
         $this->makeConnection();
@@ -113,6 +154,16 @@ class Model
             $selection->setFetchMode(\PDO::FETCH_CLASS, \model\Patient::class);
             $bezorger = $selection->fetch();
             return $bezorger;
+        }
+        return null;
+    }
+    public function getBezorgersMetArts(){
+
+        $this->makeConnection();
+        $selection = $this->database->query('SELECT `bezorger`.`id`,`bezorger`.`naam`,`phonenumber`FROM `bezorger`');
+        if($selection){
+            $result=$selection->fetchAll(\PDO::FETCH_CLASS,\model\Bezorger::class);
+            return $result;
         }
         return null;
     }

@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6b3a95-1dfc-4736-ad41-251aeab8a2c9" name="Default Changelist" comment="">
+    <list default="true" id="1e6b3a95-1dfc-4736-ad41-251aeab8a2c9" name="Default Changelist" comment="login begonnen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health.php" beforeDir="false" afterPath="$PROJECT_DIR$/health.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/loginform.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/loginform.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/View.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

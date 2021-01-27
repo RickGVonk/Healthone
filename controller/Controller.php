@@ -19,10 +19,12 @@ class Controller
         /* formulier met gegevens tonen om een rij bij te werken */
         if (isset($_POST['showForm']) && $_SESSION['username']=="admin") {
             $this->showFormPatientAction($_POST['showForm']);
+            $this->showFormBezorgerAction($_POST['showForm']);
         }
         /* UPDATE: formulier afhandeling om een rij bij te werken */
         else if (isset($_POST['update']) && $_SESSION['username']=="admin") {
             $this->updatePatientAction();
+            $this->updateBezorgerAction();
         }
         /*login met rollen*/
         else if (isset($_POST['login'])) {
@@ -115,6 +117,7 @@ class Controller
         $password = filter_input(INPUT_POST,'password');
         $this->model->login($username, $password);
         $this->view->showPatienten();
+        $this->view->showBezorger();
     }
     public function logoutAction(){
         session_unset();
