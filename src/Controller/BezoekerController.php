@@ -11,10 +11,8 @@ class BezoekerController extends AbstractController
     /**
      * @Route("/bezoeker", name="bezoeker")
      */
-    public function index(): Response
+    public function indexAction()
     {
-        return $this->render('bezoeker/index.html.twig', [
-            'controller_name' => 'BezoekerController',
-        ]);
+        return $this->render('bezoeker/index.html.twig');
     }
 }
